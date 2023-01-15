@@ -79,8 +79,8 @@ public class PutBatch_SD {
 	@Then("User should receive status code and message for PUT")
 	public void user_should_receive_status_code_and_message_for_PUT() throws IOException {
 		logger.info("User should receive status code and message for PUT");
-		String expStatusCode = excelReaderUtil.getDataFromExcelPost(scenario.getName(), "StatusCode");
-		String expMessage = excelReaderUtil.getDataFromExcelPost(scenario.getName(), "Message");
+		String expStatusCode = excelReaderUtil.getDataFromExcel(scenario.getName(), "StatusCode");
+		String expMessage = excelReaderUtil.getDataFromExcel(scenario.getName(), "Message");
 		logger.info("Expected response code: " + expStatusCode + " Expected message is: " + expMessage);
 		String responseBody = response.prettyPrint();
 		JsonPath js = response.jsonPath();
