@@ -9895,3 +9895,787 @@
 [INFO ] 2023-01-15 12:57:23.922 [main] PutBatch_SD - scenario.getName: Update batch with valid BatchId and without JSON Schema
 [INFO ] 2023-01-15 12:57:24.075 [main] PutBatch_SD - User should receive status code and message for PUT
 [INFO ] 2023-01-15 12:57:24.078 [main] PutBatch_SD - Expected response code: 415 Expected message is: Unsupported Media Type
+[INFO ] 2023-01-15 13:20:40.971 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:40.972 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:42.682 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:42.682 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:43.007 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:43.007 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:43.009 [main] ProgramPost_SD - @When User sends the request with blank fields
+[INFO ] 2023-01-15 13:20:43.320 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:43.320 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:43.321 [main] ProgramGet_SD - @Given User is on Get Method with end point
+[INFO ] 2023-01-15 13:20:43.322 [main] ProgramGet_SD - @When User sends the request with valid inputs
+[INFO ] 2023-01-15 13:20:43.495 [main] ProgramGet_SD - @Then User is able to read all user details and receive status code for get
+[INFO ] 2023-01-15 13:20:44.008 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:44.009 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:44.009 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:20:44.010 [main] ProgramGet_SD - ProgramId from excel : 520
+[INFO ] 2023-01-15 13:20:44.012 [main] ProgramGet_SD - @When User sends the request with existing programId
+[INFO ] 2023-01-15 13:20:44.156 [main] ProgramGet_SD - @User should see the program details for the given programId
+[INFO ] 2023-01-15 13:20:44.161 [main] ProgramGet_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:20:44.325 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:44.325 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:44.326 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:20:44.327 [main] ProgramGet_SD - ProgramId from excel : 000
+[INFO ] 2023-01-15 13:20:44.328 [main] ProgramGet_SD - @When User sends request with invalid userId
+[INFO ] 2023-01-15 13:20:44.471 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:20:44.471 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:44.573 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:44.573 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:44.574 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:20:44.574 [main] ProgramGet_SD - ProgramId from excel : 302P
+[INFO ] 2023-01-15 13:20:44.575 [main] ProgramGet_SD - @When User sends request with alphanumeric programId
+[INFO ] 2023-01-15 13:20:44.714 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:20:44.714 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:44.811 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:44.811 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:44.812 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:20:44.812 [main] ProgramGet_SD - ProgramId from excel : Null
+[INFO ] 2023-01-15 13:20:44.813 [main] ProgramGet_SD - @When User sends request with a null programId
+[INFO ] 2023-01-15 13:20:44.962 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:20:44.963 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:45.092 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:45.092 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:45.092 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:20:45.093 [main] ProgramGet_SD - ProgramId from excel : 1.23
+[INFO ] 2023-01-15 13:20:45.094 [main] ProgramGet_SD - @When User sends request with a decimal programId
+[INFO ] 2023-01-15 13:20:45.235 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:20:45.236 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:45.348 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:45.348 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:45.350 [main] ProgramGet_SD - @Given User is on Get Method with end point with userID as blank
+[INFO ] 2023-01-15 13:20:45.351 [main] ProgramGet_SD - @When User sends request with a blank programId
+[INFO ] 2023-01-15 13:20:45.655 [main] ProgramGet_SD - @Then User should receive error status code for get
+[INFO ] 2023-01-15 13:20:45.670 [main] ProgramGet_SD - Response Status code is =>  404
+[INFO ] 2023-01-15 13:20:45.670 [main] ProgramGet_SD - Response Body is => {
+    "timestamp": "2023-01-15T18:20:44.857+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/lms/programs/"
+}
+[INFO ] 2023-01-15 13:20:45.759 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:45.759 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:45.760 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:20:45.760 [main] ProgramDelete_SD - ProgramId from excel : 2548
+[INFO ] 2023-01-15 13:20:45.899 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:20:45.986 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:45.986 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:45.986 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:20:45.987 [main] ProgramDelete_SD - ProgramId from excel : Jan23-CRUDCarriers-SDET-562
+[INFO ] 2023-01-15 13:20:46.131 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:20:46.132 [main] ProgramDelete_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:20:46.215 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:46.215 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:46.215 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:20:46.216 [main] ProgramDelete_SD - ProgramId from excel : 6000
+[INFO ] 2023-01-15 13:20:46.354 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:20:46.355 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:20:46.427 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:46.427 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:46.428 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:20:46.429 [main] ProgramDelete_SD - ProgramId from excel : Java267
+[INFO ] 2023-01-15 13:20:46.565 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:20:46.566 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:20:46.648 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:46.648 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:46.648 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:20:46.649 [main] ProgramDelete_SD - ProgramId from excel : 
+[INFO ] 2023-01-15 13:20:46.905 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:46.905 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:46.906 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:46.906 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:20:46.906 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:20:46.907 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:20:46.907 [main] PutBatch_SD - scenario.getName: To update batch with valid BatchId
+[INFO ] 2023-01-15 13:20:47.067 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:47.068 [main] PutBatch_SD - Expected response code: 200 Expected message is: Batch Successfully Updated
+[INFO ] 2023-01-15 13:20:47.343 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:47.343 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:47.343 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:47.344 [main] PutBatch_SD - batchId:609999
+[INFO ] 2023-01-15 13:20:47.344 [main] PutBatch_SD - put batch path:/batches/609999
+[INFO ] 2023-01-15 13:20:47.344 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:20:47.344 [main] PutBatch_SD - scenario.getName: Update Batch details for a invalid BatchId
+[INFO ] 2023-01-15 13:20:47.488 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:47.492 [main] PutBatch_SD - Expected response code: 400 Expected message is: Bad Request
+[INFO ] 2023-01-15 13:20:47.908 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:47.908 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "errorCode": "ENTITY_DOES_NOT_EXIST",
+    "errorMessage": "Batch not found with Id : 609999 "
+}
+[INFO ] 2023-01-15 13:20:47.984 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:47.984 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:47.985 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:47.985 [main] PutBatch_SD - batchId:609A
+[INFO ] 2023-01-15 13:20:47.985 [main] PutBatch_SD - put batch path:/batches/609A
+[INFO ] 2023-01-15 13:20:47.986 [main] PutBatch_SD - scenario.getName: Update Batch details with Alphanumeric BatchId
+[INFO ] 2023-01-15 13:20:48.127 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:48.131 [main] PutBatch_SD - Expected response code: 400 Expected message is: Bad Request
+[INFO ] 2023-01-15 13:20:48.141 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:48.141 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "timestamp": "2023-01-15T18:20:47.330+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "path": "/lms/batches/609A"
+}
+[INFO ] 2023-01-15 13:20:48.230 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:48.230 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:48.231 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:48.231 [main] PutBatch_SD - batchId:
+[INFO ] 2023-01-15 13:20:48.231 [main] PutBatch_SD - put batch path:/batches/
+[INFO ] 2023-01-15 13:20:48.232 [main] PutBatch_SD - scenario.getName: Update Batch details with blank BatchId
+[INFO ] 2023-01-15 13:20:48.373 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:48.373 [main] PutBatch_SD - Expected response code: 405 Expected message is: Method Not Allowed
+[INFO ] 2023-01-15 13:20:48.379 [main] PutBatch_SD - Batch Put Response Status code is =>  405
+[INFO ] 2023-01-15 13:20:48.379 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "timestamp": "2023-01-15T18:20:47.577+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/lms/batches/"
+}
+[INFO ] 2023-01-15 13:20:48.456 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:48.456 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:48.457 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:48.458 [main] PutBatch_SD - batchId:609.1
+[INFO ] 2023-01-15 13:20:48.458 [main] PutBatch_SD - put batch path:/batches/609.1
+[INFO ] 2023-01-15 13:20:48.459 [main] PutBatch_SD - scenario.getName: Update Batch details with decimal BatchId
+[INFO ] 2023-01-15 13:20:48.600 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:48.601 [main] PutBatch_SD - Expected response code: 400 Expected message is: Bad Request
+[INFO ] 2023-01-15 13:20:48.610 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:48.610 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "timestamp": "2023-01-15T18:20:47.802+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "path": "/lms/batches/609.1"
+}
+[INFO ] 2023-01-15 13:20:48.683 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:48.683 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:48.684 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:48.684 [main] PutBatch_SD - batchId:-609
+[INFO ] 2023-01-15 13:20:48.684 [main] PutBatch_SD - put batch path:/batches/-609
+[INFO ] 2023-01-15 13:20:48.685 [main] PutBatch_SD - scenario.getName: Update Batch details with Negative BatchId
+[INFO ] 2023-01-15 13:20:48.833 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:48.835 [main] PutBatch_SD - Expected response code: 400 Expected message is: Batch not found with Id : -609
+[INFO ] 2023-01-15 13:20:48.845 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:20:48.845 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "errorCode": "ENTITY_DOES_NOT_EXIST",
+    "errorMessage": "Batch not found with Id : -609 "
+}
+[INFO ] 2023-01-15 13:20:48.908 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:20:48.908 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:20:48.908 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:20:48.909 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:20:48.909 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:20:48.910 [main] PutBatch_SD - scenario.getName: Update batch with valid BatchId and without JSON Schema
+[INFO ] 2023-01-15 13:20:49.054 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:20:49.054 [main] PutBatch_SD - Expected response code: 415 Expected message is: Unsupported Media Type
+[INFO ] 2023-01-15 13:24:04.868 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:04.868 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:06.957 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:06.957 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:07.261 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:07.261 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:07.263 [main] ProgramPost_SD - @When User sends the request with blank fields
+[INFO ] 2023-01-15 13:24:07.562 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:07.563 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:07.565 [main] ProgramGet_SD - @Given User is on Get Method with end point
+[INFO ] 2023-01-15 13:24:07.566 [main] ProgramGet_SD - @When User sends the request with valid inputs
+[INFO ] 2023-01-15 13:24:07.738 [main] ProgramGet_SD - @Then User is able to read all user details and receive status code for get
+[INFO ] 2023-01-15 13:24:08.130 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:08.130 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:08.131 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:24:08.131 [main] ProgramGet_SD - ProgramId from excel : 520
+[INFO ] 2023-01-15 13:24:08.132 [main] ProgramGet_SD - @When User sends the request with existing programId
+[INFO ] 2023-01-15 13:24:08.285 [main] ProgramGet_SD - @User should see the program details for the given programId
+[INFO ] 2023-01-15 13:24:08.286 [main] ProgramGet_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:24:08.401 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:08.401 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:08.402 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:24:08.403 [main] ProgramGet_SD - ProgramId from excel : 000
+[INFO ] 2023-01-15 13:24:08.404 [main] ProgramGet_SD - @When User sends request with invalid userId
+[INFO ] 2023-01-15 13:24:08.546 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:24:08.547 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:08.679 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:08.680 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:08.680 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:24:08.681 [main] ProgramGet_SD - ProgramId from excel : 302P
+[INFO ] 2023-01-15 13:24:08.681 [main] ProgramGet_SD - @When User sends request with alphanumeric programId
+[INFO ] 2023-01-15 13:24:08.831 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:24:08.832 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:08.950 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:08.950 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:08.951 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:24:08.951 [main] ProgramGet_SD - ProgramId from excel : Null
+[INFO ] 2023-01-15 13:24:08.952 [main] ProgramGet_SD - @When User sends request with a null programId
+[INFO ] 2023-01-15 13:24:09.092 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:24:09.093 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:09.177 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:09.177 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:09.178 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:24:09.178 [main] ProgramGet_SD - ProgramId from excel : 1.23
+[INFO ] 2023-01-15 13:24:09.179 [main] ProgramGet_SD - @When User sends request with a decimal programId
+[INFO ] 2023-01-15 13:24:09.327 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:24:09.329 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:09.460 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:09.461 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:09.462 [main] ProgramGet_SD - @Given User is on Get Method with end point with userID as blank
+[INFO ] 2023-01-15 13:24:09.463 [main] ProgramGet_SD - @When User sends request with a blank programId
+[INFO ] 2023-01-15 13:24:09.778 [main] ProgramGet_SD - @Then User should receive error status code for get
+[INFO ] 2023-01-15 13:24:09.789 [main] ProgramGet_SD - Response Status code is =>  404
+[INFO ] 2023-01-15 13:24:09.789 [main] ProgramGet_SD - Response Body is => {
+    "timestamp": "2023-01-15T18:24:08.980+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/lms/programs/"
+}
+[INFO ] 2023-01-15 13:24:09.910 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:09.911 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:09.912 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:24:09.913 [main] ProgramDelete_SD - ProgramId from excel : 2548
+[INFO ] 2023-01-15 13:24:10.053 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:24:10.127 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:10.128 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:10.128 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:24:10.129 [main] ProgramDelete_SD - ProgramId from excel : Jan23-CRUDCarriers-SDET-562
+[INFO ] 2023-01-15 13:24:10.279 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:24:10.280 [main] ProgramDelete_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:24:10.376 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:10.376 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:10.377 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:24:10.378 [main] ProgramDelete_SD - ProgramId from excel : 6000
+[INFO ] 2023-01-15 13:24:10.519 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:24:10.520 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:24:10.599 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:10.599 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:10.600 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:24:10.600 [main] ProgramDelete_SD - ProgramId from excel : Java267
+[INFO ] 2023-01-15 13:24:10.736 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:24:10.737 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:24:10.818 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:10.819 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:10.819 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:24:10.819 [main] ProgramDelete_SD - ProgramId from excel : 
+[INFO ] 2023-01-15 13:24:11.040 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:11.040 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:11.040 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:11.041 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:24:11.041 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:24:11.042 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:24:11.042 [main] PutBatch_SD - scenario.getName: To update batch with valid BatchId
+[INFO ] 2023-01-15 13:24:11.187 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:11.188 [main] PutBatch_SD - Expected response code: 200 Expected message is: Batch Successfully Updated
+[INFO ] 2023-01-15 13:24:11.420 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:11.420 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:11.420 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:11.421 [main] PutBatch_SD - batchId:609999
+[INFO ] 2023-01-15 13:24:11.421 [main] PutBatch_SD - put batch path:/batches/609999
+[INFO ] 2023-01-15 13:24:11.421 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:24:11.421 [main] PutBatch_SD - scenario.getName: Update Batch details for a invalid BatchId
+[INFO ] 2023-01-15 13:24:11.558 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:11.559 [main] PutBatch_SD - Expected response code: 400 Expected message is: Bad Request
+[INFO ] 2023-01-15 13:24:12.002 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:12.002 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "errorCode": "ENTITY_DOES_NOT_EXIST",
+    "errorMessage": "Batch not found with Id : 609999 "
+}
+[INFO ] 2023-01-15 13:24:12.079 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:12.079 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:12.079 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:12.080 [main] PutBatch_SD - batchId:609A
+[INFO ] 2023-01-15 13:24:12.080 [main] PutBatch_SD - put batch path:/batches/609A
+[INFO ] 2023-01-15 13:24:12.081 [main] PutBatch_SD - scenario.getName: Update Batch details with Alphanumeric BatchId
+[INFO ] 2023-01-15 13:24:12.224 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:12.226 [main] PutBatch_SD - Expected response code: 400 Expected message is: Bad Request
+[INFO ] 2023-01-15 13:24:12.234 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:12.234 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "timestamp": "2023-01-15T18:24:11.426+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "path": "/lms/batches/609A"
+}
+[INFO ] 2023-01-15 13:24:12.326 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:12.326 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:12.327 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:12.328 [main] PutBatch_SD - batchId:
+[INFO ] 2023-01-15 13:24:12.328 [main] PutBatch_SD - put batch path:/batches/
+[INFO ] 2023-01-15 13:24:12.329 [main] PutBatch_SD - scenario.getName: Update Batch details with blank BatchId
+[INFO ] 2023-01-15 13:24:12.471 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:12.472 [main] PutBatch_SD - Expected response code: 405 Expected message is: Method Not Allowed
+[INFO ] 2023-01-15 13:24:12.482 [main] PutBatch_SD - Batch Put Response Status code is =>  405
+[INFO ] 2023-01-15 13:24:12.483 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "timestamp": "2023-01-15T18:24:11.673+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/lms/batches/"
+}
+[INFO ] 2023-01-15 13:24:12.548 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:12.548 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:12.548 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:12.551 [main] PutBatch_SD - batchId:609.1
+[INFO ] 2023-01-15 13:24:12.551 [main] PutBatch_SD - put batch path:/batches/609.1
+[INFO ] 2023-01-15 13:24:12.552 [main] PutBatch_SD - scenario.getName: Update Batch details with decimal BatchId
+[INFO ] 2023-01-15 13:24:12.692 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:12.693 [main] PutBatch_SD - Expected response code: 400 Expected message is: Bad Request
+[INFO ] 2023-01-15 13:24:12.699 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:12.699 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "timestamp": "2023-01-15T18:24:11.896+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "path": "/lms/batches/609.1"
+}
+[INFO ] 2023-01-15 13:24:12.779 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:12.779 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:12.779 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:12.780 [main] PutBatch_SD - batchId:-609
+[INFO ] 2023-01-15 13:24:12.780 [main] PutBatch_SD - put batch path:/batches/-609
+[INFO ] 2023-01-15 13:24:12.781 [main] PutBatch_SD - scenario.getName: Update Batch details with Negative BatchId
+[INFO ] 2023-01-15 13:24:12.916 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:12.916 [main] PutBatch_SD - Expected response code: 400 Expected message is: Batch not found with Id : -609
+[INFO ] 2023-01-15 13:24:12.928 [main] PutBatch_SD - Batch Put Response Status code is =>  400
+[INFO ] 2023-01-15 13:24:12.928 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "errorCode": "ENTITY_DOES_NOT_EXIST",
+    "errorMessage": "Batch not found with Id : -609 "
+}
+[INFO ] 2023-01-15 13:24:13.012 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:24:13.012 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:24:13.012 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:24:13.012 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:24:13.012 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:24:13.012 [main] PutBatch_SD - scenario.getName: Update batch with valid BatchId and without JSON Schema
+[INFO ] 2023-01-15 13:24:13.152 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:24:13.153 [main] PutBatch_SD - Expected response code: 415 Expected message is: Unsupported Media Type
+[INFO ] 2023-01-15 13:33:13.939 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:13.940 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:15.728 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:15.729 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:16.065 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:16.065 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:16.067 [main] ProgramPost_SD - @When User sends the request with blank fields
+[INFO ] 2023-01-15 13:33:16.382 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:16.382 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:16.384 [main] ProgramGet_SD - @Given User is on Get Method with end point
+[INFO ] 2023-01-15 13:33:16.386 [main] ProgramGet_SD - @When User sends the request with valid inputs
+[INFO ] 2023-01-15 13:33:16.554 [main] ProgramGet_SD - @Then User is able to read all user details and receive status code for get
+[INFO ] 2023-01-15 13:33:16.893 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:16.893 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:16.894 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:33:16.895 [main] ProgramGet_SD - ProgramId from excel : 520
+[INFO ] 2023-01-15 13:33:16.896 [main] ProgramGet_SD - @When User sends the request with existing programId
+[INFO ] 2023-01-15 13:33:17.052 [main] ProgramGet_SD - @User should see the program details for the given programId
+[INFO ] 2023-01-15 13:33:17.053 [main] ProgramGet_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:33:17.153 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:17.153 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:17.153 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:33:17.154 [main] ProgramGet_SD - ProgramId from excel : 000
+[INFO ] 2023-01-15 13:33:17.155 [main] ProgramGet_SD - @When User sends request with invalid userId
+[INFO ] 2023-01-15 13:33:17.300 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:33:17.301 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:33:17.431 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:17.431 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:17.432 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:33:17.432 [main] ProgramGet_SD - ProgramId from excel : 302P
+[INFO ] 2023-01-15 13:33:17.433 [main] ProgramGet_SD - @When User sends request with alphanumeric programId
+[INFO ] 2023-01-15 13:33:17.568 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:33:17.569 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:33:17.676 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:17.676 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:17.677 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:33:17.678 [main] ProgramGet_SD - ProgramId from excel : Null
+[INFO ] 2023-01-15 13:33:17.679 [main] ProgramGet_SD - @When User sends request with a null programId
+[INFO ] 2023-01-15 13:33:17.824 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:33:17.826 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:33:17.979 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:17.979 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:17.980 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:33:17.981 [main] ProgramGet_SD - ProgramId from excel : 1.23
+[INFO ] 2023-01-15 13:33:17.981 [main] ProgramGet_SD - @When User sends request with a decimal programId
+[INFO ] 2023-01-15 13:33:18.119 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:33:18.120 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:33:18.227 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:18.227 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:18.228 [main] ProgramGet_SD - @Given User is on Get Method with end point with userID as blank
+[INFO ] 2023-01-15 13:33:18.229 [main] ProgramGet_SD - @When User sends request with a blank programId
+[INFO ] 2023-01-15 13:33:18.523 [main] ProgramGet_SD - @Then User should receive error status code for get
+[INFO ] 2023-01-15 13:33:18.538 [main] ProgramGet_SD - Response Status code is =>  404
+[INFO ] 2023-01-15 13:33:18.538 [main] ProgramGet_SD - Response Body is => {
+    "timestamp": "2023-01-15T18:33:17.723+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/lms/programs/"
+}
+[INFO ] 2023-01-15 13:33:18.628 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:18.629 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:18.630 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:33:18.631 [main] ProgramDelete_SD - ProgramId from excel : 2548
+[INFO ] 2023-01-15 13:33:18.775 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:33:18.874 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:18.874 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:18.875 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:33:18.875 [main] ProgramDelete_SD - ProgramId from excel : Jan23-CRUDCarriers-SDET-562
+[INFO ] 2023-01-15 13:33:19.016 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:33:19.017 [main] ProgramDelete_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:33:19.113 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:19.113 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:19.114 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:33:19.115 [main] ProgramDelete_SD - ProgramId from excel : 6000
+[INFO ] 2023-01-15 13:33:19.254 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:33:19.254 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:33:19.340 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:19.341 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:19.341 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:33:19.342 [main] ProgramDelete_SD - ProgramId from excel : Java267
+[INFO ] 2023-01-15 13:33:19.482 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:33:19.483 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:33:19.577 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:19.577 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:19.577 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:33:19.578 [main] ProgramDelete_SD - ProgramId from excel : 
+[INFO ] 2023-01-15 13:33:19.816 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:19.816 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:19.816 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:19.817 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:33:19.817 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:33:19.817 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:33:19.818 [main] PutBatch_SD - scenario.getName: To update batch with valid BatchId
+[INFO ] 2023-01-15 13:33:19.975 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:33:19.977 [main] PutBatch_SD - Expected response code: 200 Expected message is: Batch Successfully Updated
+[INFO ] 2023-01-15 13:33:20.249 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:20.249 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:20.249 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:20.250 [main] PutBatch_SD - batchId:609999
+[INFO ] 2023-01-15 13:33:20.250 [main] PutBatch_SD - put batch path:/batches/609999
+[INFO ] 2023-01-15 13:33:20.250 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:33:20.251 [main] PutBatch_SD - scenario.getName: Update Batch details for a invalid BatchId
+[INFO ] 2023-01-15 13:33:20.389 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:33:20.457 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:20.457 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:20.458 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:20.459 [main] PutBatch_SD - batchId:609A
+[INFO ] 2023-01-15 13:33:20.459 [main] PutBatch_SD - put batch path:/batches/609A
+[INFO ] 2023-01-15 13:33:20.460 [main] PutBatch_SD - scenario.getName: Update Batch details with Alphanumeric BatchId
+[INFO ] 2023-01-15 13:33:20.600 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:33:20.702 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:20.702 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:20.703 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:20.703 [main] PutBatch_SD - batchId:
+[INFO ] 2023-01-15 13:33:20.703 [main] PutBatch_SD - put batch path:/batches/
+[INFO ] 2023-01-15 13:33:20.704 [main] PutBatch_SD - scenario.getName: Update Batch details with blank BatchId
+[INFO ] 2023-01-15 13:33:20.843 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:33:20.932 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:20.932 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:20.932 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:20.933 [main] PutBatch_SD - batchId:609.1
+[INFO ] 2023-01-15 13:33:20.934 [main] PutBatch_SD - put batch path:/batches/609.1
+[INFO ] 2023-01-15 13:33:20.934 [main] PutBatch_SD - scenario.getName: Update Batch details with decimal BatchId
+[INFO ] 2023-01-15 13:33:21.069 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:33:21.134 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:21.134 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:21.134 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:21.135 [main] PutBatch_SD - batchId:-609
+[INFO ] 2023-01-15 13:33:21.135 [main] PutBatch_SD - put batch path:/batches/-609
+[INFO ] 2023-01-15 13:33:21.135 [main] PutBatch_SD - scenario.getName: Update Batch details with Negative BatchId
+[INFO ] 2023-01-15 13:33:21.269 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:33:21.341 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:33:21.341 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:33:21.342 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:33:21.343 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:33:21.343 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:33:21.344 [main] PutBatch_SD - scenario.getName: Update batch with valid BatchId and without JSON Schema
+[INFO ] 2023-01-15 13:33:21.482 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:35:55.779 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:55.781 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:57.593 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:57.593 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:57.961 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:57.962 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:57.966 [main] ProgramPost_SD - @When User sends the request with blank fields
+[INFO ] 2023-01-15 13:35:58.318 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:58.318 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:58.319 [main] ProgramGet_SD - @Given User is on Get Method with end point
+[INFO ] 2023-01-15 13:35:58.320 [main] ProgramGet_SD - @When User sends the request with valid inputs
+[INFO ] 2023-01-15 13:35:58.495 [main] ProgramGet_SD - @Then User is able to read all user details and receive status code for get
+[INFO ] 2023-01-15 13:35:58.854 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:58.854 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:58.855 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:35:58.855 [main] ProgramGet_SD - ProgramId from excel : 520
+[INFO ] 2023-01-15 13:35:58.857 [main] ProgramGet_SD - @When User sends the request with existing programId
+[INFO ] 2023-01-15 13:35:59.002 [main] ProgramGet_SD - @User should see the program details for the given programId
+[INFO ] 2023-01-15 13:35:59.003 [main] ProgramGet_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:35:59.145 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:59.146 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:59.147 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:35:59.148 [main] ProgramGet_SD - ProgramId from excel : 000
+[INFO ] 2023-01-15 13:35:59.148 [main] ProgramGet_SD - @When User sends request with invalid userId
+[INFO ] 2023-01-15 13:35:59.296 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:35:59.296 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:35:59.400 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:59.400 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:59.401 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:35:59.402 [main] ProgramGet_SD - ProgramId from excel : 302P
+[INFO ] 2023-01-15 13:35:59.402 [main] ProgramGet_SD - @When User sends request with alphanumeric programId
+[INFO ] 2023-01-15 13:35:59.536 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:35:59.537 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:35:59.669 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:59.670 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:59.670 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:35:59.671 [main] ProgramGet_SD - ProgramId from excel : Null
+[INFO ] 2023-01-15 13:35:59.673 [main] ProgramGet_SD - @When User sends request with a null programId
+[INFO ] 2023-01-15 13:35:59.823 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:35:59.824 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:35:59.910 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:35:59.910 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:35:59.911 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:35:59.912 [main] ProgramGet_SD - ProgramId from excel : 1.23
+[INFO ] 2023-01-15 13:35:59.913 [main] ProgramGet_SD - @When User sends request with a decimal programId
+[INFO ] 2023-01-15 13:36:00.050 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:36:00.050 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:36:00.170 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:00.171 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:00.171 [main] ProgramGet_SD - @Given User is on Get Method with end point with userID as blank
+[INFO ] 2023-01-15 13:36:00.172 [main] ProgramGet_SD - @When User sends request with a blank programId
+[INFO ] 2023-01-15 13:36:00.471 [main] ProgramGet_SD - @Then User should receive error status code for get
+[INFO ] 2023-01-15 13:36:00.487 [main] ProgramGet_SD - Response Status code is =>  404
+[INFO ] 2023-01-15 13:36:00.487 [main] ProgramGet_SD - Response Body is => {
+    "timestamp": "2023-01-15T18:35:59.668+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/lms/programs/"
+}
+[INFO ] 2023-01-15 13:36:00.597 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:00.598 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:00.598 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:36:00.599 [main] ProgramDelete_SD - ProgramId from excel : 2548
+[INFO ] 2023-01-15 13:36:00.734 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:36:00.827 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:00.827 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:00.828 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:36:00.829 [main] ProgramDelete_SD - ProgramId from excel : Jan23-CRUDCarriers-SDET-562
+[INFO ] 2023-01-15 13:36:00.968 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:36:00.969 [main] ProgramDelete_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:36:01.056 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:01.056 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:01.056 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:36:01.057 [main] ProgramDelete_SD - ProgramId from excel : 6000
+[INFO ] 2023-01-15 13:36:01.192 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:36:01.192 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:36:01.268 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:01.269 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:01.269 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:36:01.269 [main] ProgramDelete_SD - ProgramId from excel : Java267
+[INFO ] 2023-01-15 13:36:01.414 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:36:01.414 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:36:01.494 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:01.494 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:01.495 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:36:01.495 [main] ProgramDelete_SD - ProgramId from excel : 
+[INFO ] 2023-01-15 13:36:01.712 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:01.712 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:01.713 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:01.713 [main] PutBatch_SD - batchId:898
+[INFO ] 2023-01-15 13:36:01.713 [main] PutBatch_SD - put batch path:/batches/898
+[INFO ] 2023-01-15 13:36:01.714 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:36:01.714 [main] PutBatch_SD - scenario.getName: To update batch with valid BatchId
+[INFO ] 2023-01-15 13:36:01.851 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:01.852 [main] PutBatch_SD - Expected response code: 200 Expected message is: Batch Successfully Updated
+[INFO ] 2023-01-15 13:36:02.383 [main] PutBatch_SD - Batch Put Response Status code is =>  200
+[INFO ] 2023-01-15 13:36:02.383 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "batchId": 898,
+    "batchName": "Jan23-CRUDCarriers-SDET-251",
+    "batchDescription": "API07",
+    "batchStatus": "Active",
+    "batchNoOfClasses": 13,
+    "programId": 305,
+    "programName": "Jan23-CRUDCarriers-SDET-008"
+}
+[INFO ] 2023-01-15 13:36:02.458 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:02.458 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:02.459 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:02.459 [main] PutBatch_SD - batchId:609999
+[INFO ] 2023-01-15 13:36:02.459 [main] PutBatch_SD - put batch path:/batches/609999
+[INFO ] 2023-01-15 13:36:02.460 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:36:02.460 [main] PutBatch_SD - scenario.getName: Update Batch details for a invalid BatchId
+[INFO ] 2023-01-15 13:36:02.601 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:02.685 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:02.685 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:02.685 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:02.686 [main] PutBatch_SD - batchId:609A
+[INFO ] 2023-01-15 13:36:02.686 [main] PutBatch_SD - put batch path:/batches/609A
+[INFO ] 2023-01-15 13:36:02.686 [main] PutBatch_SD - scenario.getName: Update Batch details with Alphanumeric BatchId
+[INFO ] 2023-01-15 13:36:02.828 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:02.902 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:02.902 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:02.902 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:02.903 [main] PutBatch_SD - batchId:
+[INFO ] 2023-01-15 13:36:02.903 [main] PutBatch_SD - put batch path:/batches/
+[INFO ] 2023-01-15 13:36:02.904 [main] PutBatch_SD - scenario.getName: Update Batch details with blank BatchId
+[INFO ] 2023-01-15 13:36:03.051 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:03.120 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:03.120 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:03.120 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:03.124 [main] PutBatch_SD - batchId:609.1
+[INFO ] 2023-01-15 13:36:03.124 [main] PutBatch_SD - put batch path:/batches/609.1
+[INFO ] 2023-01-15 13:36:03.125 [main] PutBatch_SD - scenario.getName: Update Batch details with decimal BatchId
+[INFO ] 2023-01-15 13:36:03.267 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:03.328 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:03.328 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:03.328 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:03.330 [main] PutBatch_SD - batchId:-609
+[INFO ] 2023-01-15 13:36:03.330 [main] PutBatch_SD - put batch path:/batches/-609
+[INFO ] 2023-01-15 13:36:03.330 [main] PutBatch_SD - scenario.getName: Update Batch details with Negative BatchId
+[INFO ] 2023-01-15 13:36:03.467 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:03.541 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:03.541 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:03.541 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:03.542 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:36:03.542 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:36:03.542 [main] PutBatch_SD - scenario.getName: Update batch with valid BatchId and without JSON Schema
+[INFO ] 2023-01-15 13:36:03.686 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:47.303 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:47.303 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:49.178 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:49.179 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:49.497 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:49.497 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:49.499 [main] ProgramPost_SD - @When User sends the request with blank fields
+[INFO ] 2023-01-15 13:36:49.828 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:49.829 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:49.829 [main] ProgramGet_SD - @Given User is on Get Method with end point
+[INFO ] 2023-01-15 13:36:49.830 [main] ProgramGet_SD - @When User sends the request with valid inputs
+[INFO ] 2023-01-15 13:36:50.001 [main] ProgramGet_SD - @Then User is able to read all user details and receive status code for get
+[INFO ] 2023-01-15 13:36:50.342 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:50.343 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:50.343 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:36:50.344 [main] ProgramGet_SD - ProgramId from excel : 520
+[INFO ] 2023-01-15 13:36:50.346 [main] ProgramGet_SD - @When User sends the request with existing programId
+[INFO ] 2023-01-15 13:36:50.485 [main] ProgramGet_SD - @User should see the program details for the given programId
+[INFO ] 2023-01-15 13:36:50.487 [main] ProgramGet_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:36:50.601 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:50.601 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:50.604 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:36:50.605 [main] ProgramGet_SD - ProgramId from excel : 000
+[INFO ] 2023-01-15 13:36:50.607 [main] ProgramGet_SD - @When User sends request with invalid userId
+[INFO ] 2023-01-15 13:36:50.751 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:36:50.752 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:36:50.847 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:50.847 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:50.848 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:36:50.849 [main] ProgramGet_SD - ProgramId from excel : 302P
+[INFO ] 2023-01-15 13:36:50.850 [main] ProgramGet_SD - @When User sends request with alphanumeric programId
+[INFO ] 2023-01-15 13:36:50.985 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:36:50.986 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:36:51.104 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:51.104 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:51.104 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:36:51.105 [main] ProgramGet_SD - ProgramId from excel : Null
+[INFO ] 2023-01-15 13:36:51.106 [main] ProgramGet_SD - @When User sends request with a null programId
+[INFO ] 2023-01-15 13:36:51.245 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:36:51.245 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:36:51.329 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:51.329 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:51.330 [main] ProgramGet_SD - @Given User is on Get Method with end point for single user
+[INFO ] 2023-01-15 13:36:51.330 [main] ProgramGet_SD - ProgramId from excel : 1.23
+[INFO ] 2023-01-15 13:36:51.331 [main] ProgramGet_SD - @When User sends request with a decimal programId
+[INFO ] 2023-01-15 13:36:51.487 [main] ProgramGet_SD - @Then User should receive error status code and message
+[INFO ] 2023-01-15 13:36:51.487 [main] ProgramGet_SD - Response Status code is =>  400
+[INFO ] 2023-01-15 13:36:51.583 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:51.583 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:51.584 [main] ProgramGet_SD - @Given User is on Get Method with end point with userID as blank
+[INFO ] 2023-01-15 13:36:51.585 [main] ProgramGet_SD - @When User sends request with a blank programId
+[INFO ] 2023-01-15 13:36:51.876 [main] ProgramGet_SD - @Then User should receive error status code for get
+[INFO ] 2023-01-15 13:36:51.888 [main] ProgramGet_SD - Response Status code is =>  404
+[INFO ] 2023-01-15 13:36:51.888 [main] ProgramGet_SD - Response Body is => {
+    "timestamp": "2023-01-15T18:36:51.075+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/lms/programs/"
+}
+[INFO ] 2023-01-15 13:36:51.974 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:51.974 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:51.975 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:36:51.977 [main] ProgramDelete_SD - ProgramId from excel : 2548
+[INFO ] 2023-01-15 13:36:52.118 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:36:52.211 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:52.211 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:52.212 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:36:52.213 [main] ProgramDelete_SD - ProgramId from excel : Jan23-CRUDCarriers-SDET-562
+[INFO ] 2023-01-15 13:36:52.353 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:36:52.354 [main] ProgramDelete_SD - Actual Response Status code=>  200  Expected Response Status code=>  200
+[INFO ] 2023-01-15 13:36:52.431 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:52.431 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:52.432 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:36:52.432 [main] ProgramDelete_SD - ProgramId from excel : 6000
+[INFO ] 2023-01-15 13:36:52.568 [main] ProgramDelete_SD - @Then User should receive status code and message for delete
+[INFO ] 2023-01-15 13:36:52.569 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:36:52.645 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:52.645 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:52.646 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint by progname
+[INFO ] 2023-01-15 13:36:52.647 [main] ProgramDelete_SD - ProgramId from excel : Java267
+[INFO ] 2023-01-15 13:36:52.780 [main] ProgramDelete_SD - @Then user receive status code for existing prog name
+[INFO ] 2023-01-15 13:36:52.781 [main] ProgramDelete_SD - Actual Response Status code=>  400  Expected Response Status code=>  400
+[INFO ] 2023-01-15 13:36:52.852 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:52.852 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:52.855 [main] ProgramDelete_SD - @Given User is on DELETE method with endpoint
+[INFO ] 2023-01-15 13:36:52.856 [main] ProgramDelete_SD - ProgramId from excel : 
+[INFO ] 2023-01-15 13:36:53.066 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:53.067 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:53.067 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:53.068 [main] PutBatch_SD - batchId:898
+[INFO ] 2023-01-15 13:36:53.068 [main] PutBatch_SD - put batch path:/batches/898
+[INFO ] 2023-01-15 13:36:53.069 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:36:53.069 [main] PutBatch_SD - scenario.getName: To update batch with valid BatchId
+[INFO ] 2023-01-15 13:36:53.214 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:53.215 [main] PutBatch_SD - Expected response code: 200 Expected message is: Batch Successfully Updated
+[INFO ] 2023-01-15 13:36:53.830 [main] PutBatch_SD - Batch Put Response Status code is =>  200
+[INFO ] 2023-01-15 13:36:53.830 [main] PutBatch_SD - Batch Put  Response Body is =>  {
+    "batchId": 898,
+    "batchName": "Jan23-CRUDCarriers-SDET-251",
+    "batchDescription": "API07",
+    "batchStatus": "Active",
+    "batchNoOfClasses": 13,
+    "programId": 305,
+    "programName": "Jan23-CRUDCarriers-SDET-008"
+}
+[INFO ] 2023-01-15 13:36:53.894 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:53.894 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:53.894 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:53.895 [main] PutBatch_SD - batchId:609999
+[INFO ] 2023-01-15 13:36:53.895 [main] PutBatch_SD - put batch path:/batches/609999
+[INFO ] 2023-01-15 13:36:53.895 [main] PutBatch_SD - @When User sends request with valid batch inputs
+[INFO ] 2023-01-15 13:36:53.896 [main] PutBatch_SD - scenario.getName: Update Batch details for a invalid BatchId
+[INFO ] 2023-01-15 13:36:54.035 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:54.136 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:54.136 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:54.137 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:54.137 [main] PutBatch_SD - batchId:609A
+[INFO ] 2023-01-15 13:36:54.137 [main] PutBatch_SD - put batch path:/batches/609A
+[INFO ] 2023-01-15 13:36:54.138 [main] PutBatch_SD - scenario.getName: Update Batch details with Alphanumeric BatchId
+[INFO ] 2023-01-15 13:36:54.277 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:54.372 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:54.372 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:54.372 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:54.373 [main] PutBatch_SD - batchId:
+[INFO ] 2023-01-15 13:36:54.373 [main] PutBatch_SD - put batch path:/batches/
+[INFO ] 2023-01-15 13:36:54.374 [main] PutBatch_SD - scenario.getName: Update Batch details with blank BatchId
+[INFO ] 2023-01-15 13:36:54.510 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:54.583 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:54.583 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:54.584 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:54.586 [main] PutBatch_SD - batchId:609.1
+[INFO ] 2023-01-15 13:36:54.586 [main] PutBatch_SD - put batch path:/batches/609.1
+[INFO ] 2023-01-15 13:36:54.587 [main] PutBatch_SD - scenario.getName: Update Batch details with decimal BatchId
+[INFO ] 2023-01-15 13:36:54.722 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:54.786 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:54.786 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:54.787 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:54.787 [main] PutBatch_SD - batchId:-609
+[INFO ] 2023-01-15 13:36:54.787 [main] PutBatch_SD - put batch path:/batches/-609
+[INFO ] 2023-01-15 13:36:54.788 [main] PutBatch_SD - scenario.getName: Update Batch details with Negative BatchId
+[INFO ] 2023-01-15 13:36:54.923 [main] PutBatch_SD - User should receive status code and message for PUT
+[INFO ] 2023-01-15 13:36:54.985 [main] PutBatch_SD -  sheetPutput
+[INFO ] 2023-01-15 13:36:54.985 [main] PutBatch_SD -  batchExcelpath ./src/test/resources/excelData/batch_testdata.xlsx
+[INFO ] 2023-01-15 13:36:54.985 [main] PutBatch_SD - @Given User is on Put Method with endpoint
+[INFO ] 2023-01-15 13:36:54.986 [main] PutBatch_SD - batchId:609
+[INFO ] 2023-01-15 13:36:54.986 [main] PutBatch_SD - put batch path:/batches/609
+[INFO ] 2023-01-15 13:36:54.986 [main] PutBatch_SD - scenario.getName: Update batch with valid BatchId and without JSON Schema
+[INFO ] 2023-01-15 13:36:55.132 [main] PutBatch_SD - User should receive status code and message for PUT
