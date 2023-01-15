@@ -26,7 +26,7 @@ public class PutBatch_SD {
 	Response response;
 	String path;
 	String sheetPut;
-	int batchId = 1036;
+	String batchId;
 
 	ExcelReader excelReaderUtil;
 	Scenario scenario;
@@ -59,23 +59,26 @@ public class PutBatch_SD {
         		
 	}
 	
-	@Given("User is on PUT Method with endpoint")
+	@Given("User is on PUT method with endpoint")
 	public void user_is_on_put_method_with_endpoint() throws IOException {
 		logger.info("@Given User is on Put Method with endpoint");
 	     RestAssured.baseURI = properties.getProperty("base_uri");
 			requestSpec = RestAssured.given();
-			// batchId = excelReaderUtil.getDataFromExcel(scenario.getName(),"batchId");
+			 batchId = excelReaderUtil.getDataFromExcel(scenario.getName(),"BatchId");
+			 logger.info("batchId:"+batchId);
+			 
 			path = properties.getProperty("endpointBatchPut")+ batchId;
 			logger.info("put batch path:"+path);
 	}
-	@When("User sends request with valid batch inputs")
-	public void user_sends_request_with_valid_batch_inputs() throws Exception {
+	
+	@When("User sends request with valid BatchId")
+	public void User_sends_request_with_valid_BatchId() throws Exception {
 		logger.info("@When User sends request with valid batch inputs");
 		requestSpecificationPut();
 	}
-	@Then("User should receive status code and message for Put")
-	public void user_should_receive_status_code_and_message_for_put() throws IOException {
-		logger.info("@Then User should receive status code and message for Batch Put");
+	@Then("User should receive status code and message for PUT")
+	public void user_should_receive_status_code_and_message_for_PUT() throws IOException {
+		logger.info("User should receive status code and message for PUT");
 		String expStatusCode = excelReaderUtil.getDataFromExcel(scenario.getName(), "StatusCode");
 		String expMessage = excelReaderUtil.getDataFromExcel(scenario.getName(), "Message");
 		logger.info("Expected response code: " + expStatusCode + " Expected message is: " + expMessage);
@@ -94,5 +97,33 @@ public class PutBatch_SD {
 		logger.info("Batch Put  Response Body is =>  " + responseBody);
 	}
 	
+	@When("User sends the PUT request with invalid Batchid")
+	public void user_sends_the_put_request_with_invalid_batchid() throws Exception {
+		logger.info("@When User sends request with valid batch inputs");
+		requestSpecificationPut();
+	}
+	@When("User sends the PUT request with Alphanumeric BatchId")
+	public void user_sends_the_put_request_with_alphanumeric_batch_id() throws Exception {
+		requestSpecificationPut();
+	}
+
+	@When("User sends the PUT request with blank BatchId")
+	public void user_sends_the_put_request_with_blank_batch_id() throws Exception {
+		requestSpecificationPut();
+	}
+
+	@When("User sends the PUT request with decimal BatchId")
+	public void user_sends_the_put_request_with_decimal_batch_id() throws Exception {
+		requestSpecificationPut();
+	}
+
+	@When("User sends the PUT request with negative BatchId")
+	public void user_sends_the_put_request_with_negative_batch_id()throws Exception {
+		requestSpecificationPut();
+	}
+	@When("User sends the PUT request with valid BatchId and without valid Json Schema")
+	public void user_sends_the_put_request_with_valid_batch_id_and_without_valid_json_schema() throws Exception {
+		requestSpecificationPut();
+	}
 	
 }

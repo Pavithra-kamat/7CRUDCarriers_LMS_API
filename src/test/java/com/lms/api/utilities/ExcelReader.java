@@ -53,15 +53,16 @@ public class ExcelReader {
 		int totalRows = sheet.getLastRowNum();
 		int totalCols = sheet.getRow(0).getPhysicalNumberOfCells();
 		for (int i = 0; i <= totalRows; i++) {
-			if (sheet.getRow(i).getCell(0).getStringCellValue().equals(rowName)) {
+			if (sheet.getRow(i).getCell(0).getStringCellValue().trim().equals(rowName.trim())) {
 				dataRowNum = i;
 				break;
 			}
 
 		}
 		for (int j = 0; j <= totalCols; j++) {
-			if (sheet.getRow(0).getCell(j).getStringCellValue().equals(colName)) {
+			if (sheet.getRow(0).getCell(j).getStringCellValue().trim().equals(colName.trim())) {
 				dataColNum = j;
+				System.out.println("Inside If row j" );
 				break;
 			}
 		}
@@ -72,7 +73,6 @@ public class ExcelReader {
 		DataFormatter formatter = new DataFormatter(); // creating formatter using the default locale
 		Cell cell = sheet.getRow(dataRowNum).getCell(dataColNum);
 		String retVal1 = formatter.formatCellValue(cell); // Returns the formatted value of a cell as a String
-															// regardless of the cell type.
 		fis.close();
 		return retVal1;
 	}
