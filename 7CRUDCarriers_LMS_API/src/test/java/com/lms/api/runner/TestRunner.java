@@ -10,12 +10,13 @@ import io.cucumber.junit.CucumberOptions;
  *
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features/", 
-                  glue = { "com/lms/api/stepDefinition" },
-                  monochrome = true, 
-                  dryRun = false, 
-                  plugin = { "pretty", "html:target/lms_api_logs.html",
-				              "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" })
+@CucumberOptions(features = "src/test/resources/features/",
+glue =  {"com/lms/api/programStepDefinition",
+		"com/lms/api/batchStepDefinition" }, 
+monochrome = true,
+dryRun = false,
+plugin = {"pretty", "html:target/lms_api_logs.html", 
+		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" })
 
 public class TestRunner {
 
