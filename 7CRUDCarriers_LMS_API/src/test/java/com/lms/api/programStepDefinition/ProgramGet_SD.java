@@ -122,7 +122,7 @@ public class ProgramGet_SD {
 		logger.info("Response Body is => " + responseBody);
 
 		JsonPath js = response.jsonPath();
-		String rsProgramId = js.get("programId");
+		String rsProgramId = js.get("programId").toString();
 		logger.info("programId from json :  " + rsProgramId);
 	}
 	@When("User sends the request with invalid programId")
