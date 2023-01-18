@@ -101,6 +101,8 @@ public class ProgramPut_SD {
 	
 	@Then("User should receive proper status code and valid reponse")
 	public void user_should_receive_proper_status_code_and_valid_reponse() throws IOException {
+		
+		
 		String responseBody = response.prettyPrint();
 		logger.info("Response body details" +responseBody);
 		JsonPath js = response.jsonPath();
